@@ -1,0 +1,366 @@
+@font-face {
+  font-family: 'Pacifico';
+  src:url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  src:url(../fonts/Montserrat-Bold.ttf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+.container {
+  width:100%;
+  margin:auto;
+}
+/* -------------------- Estilos del header -------------------- */
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+}
+
+/* -------------------- Estilos del menu -------------------- */
+.contenedor-div {
+  width: 100%;
+  margin-top:;
+  background: rgb(0,130,0);
+  padding: 8px;
+  position: fixed;
+  z-index: 1;
+  overflow:hidden;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.contenedor-div--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-bars {
+  display: block;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  float:right;
+  margin-right:3%;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-left:-500px;
+  display:none;
+  width:100%;
+}
+
+/* LOGOTIPO */
+
+.logo-container {
+  display: flex;
+  justify-content: ;
+  flex-wrap: ;
+}
+
+.logo-letter {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+.logo-letter2 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.logo-somosciencia {
+  width: 180px;
+  height: 30px;
+  margin-right: 3px;
+  padding-top: 3px;
+  object-fit: cover;
+}
+
+/* FIN DE LOGOTIPO */
+
+.menu {
+  display: block;
+  position: fixed;
+  top: 125px;
+  left: 5%;
+  opacity: 1;
+  width: 90%;
+  background: rgb(0,130,0);
+  border-radius: 8px;
+  list-style: none;
+  text-align: center;
+  padding:0;
+  transition: all 0.4s;
+}
+.menu__link {
+  display: none;
+  padding: 15px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link:hover {
+  background: rgb(0,150,0);
+  color: #fff;
+}
+
+.mostrar {
+  top: 70px;
+  opacity: 1;
+}
+
+.mostrar-link-blog,.mostrar-link-news,.mostrar-link-home {
+  display: block;
+}
+
+.menu__link-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* -------------------- Estilos del banner -------------------- */
+
+.banner {
+  background-image:url("../img/banner.jpeg");
+  background-attachment:fixed;
+  background-size:100% 100%;
+  margin-top:0;
+  position: ;
+  z-index: -1;
+}
+
+.contenedor {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6));
+  position: ;
+  top: ;
+  left: ;
+  /*transform: translateX(-50%) translateY(-50%);*/
+  width: ;
+  color: white;
+  padding-top: 100px;
+  height: 400px;
+}
+
+.banner__titulo {
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+}
+
+.banner__txt {
+  width: 100%;
+  line-height: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* -------------------- Estilos del Footer -------------------- */
+
+.main-footer {
+  padding: 20px;
+  background: #222;
+}
+
+.column {
+  margin-bottom:15px;
+}
+
+.column-titulo {
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.column-titulo, .column-texto, .copy {
+  color:#fff;
+}
+
+.justify {
+  text-align:justify;
+}
+
+.copy {
+  font-size:13px;
+  text-align:center;
+}
+
+.column-texto {
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.main-footer [class*="icon-"] {
+  color:#fff;
+  text-decoration:none;
+}
+
+.main-footer [class*="icon-"]:before {
+  position:relative;
+  top:3px;
+  right:5px;
+}
+
+@media screen and (min-width: 480px){
+  .container {
+    width:95%;
+  }
+
+  /*------------------ Estilos del footer ----------------------*/
+  .contenedor-footer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+
+  .column {
+    vertical-align:top;
+    width:30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width:80%;
+  }
+  .banner_content {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+   .icon-bars {
+    display: none;
+   }
+
+   .container {
+     width:1000px;
+   }
+   /*Estilos del menu*/
+
+   .contenedor-div--flex {
+    position: ;
+   }
+
+   .contenedor-div--flex-1 {
+    z-index: 1000;
+    width: 25%;
+   }
+   .contenedor-div--flex-2 {
+    position: relative;
+    width: 74%;
+   }
+
+   .contenedor-div {
+    width: 100%;
+    min-width: 100%;
+    height: 50px;
+   }
+
+   .logo {
+    display: none;
+   }
+
+   .logo-white {
+    height: 48px;
+   }
+
+   .nav {
+    width: 100%;
+    top:0;
+    left: 0;
+   }
+
+   .menu {
+    position: ;
+     float:;
+     top: 0px;
+     opacity: 1;
+     background: 0;
+     border-radius: 0;
+     box-sizing: border-box;
+   }
+
+   .menu__item {
+     float:right;
+     display:inline-block;
+   }
+
+   .menu__link {
+    display: block;
+    background: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 0;
+    padding-top: 15px;
+    margin-left: 15px;
+    transition: .2s;
+    height: 25px;
+   }
+   .menu__link:hover {
+    background: none;
+    border-bottom: 3px solid #fff;
+   }
+   .active {
+    border-bottom: 3px solid #fff;
+   }
+  /*--------------------- Estilos del banner ------------------------*/
+  .contenedor {
+    height: 300px;
+  }
+  .banner_content {
+    width: 60%;
+  }
+
+  /*--------------------- Estilos del footer ------------------------*/
+
+  .column-texto {
+    font-size:13px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1300px;
+  }
+}
